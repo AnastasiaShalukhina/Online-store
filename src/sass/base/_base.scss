@@ -1,0 +1,40 @@
+@use '@src/sass/abstracts/constants' as *;
+@use '@src/sass/abstracts/mixins' as *;
+@use '@src/sass/base/typography' as *;
+
+
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-family;
+  @include font ($style: normal, $weight: 500, $size: 1.6rem, $height: 2.24rem);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include font ($style: normal, $weight: 400, $size: 1.9rem, $height: 2.28rem);
+}
+
+h2 {
+  @include font ($style: normal, $weight: 400, $size: 4.8rem, $height: 5.76rem);
+  margin: 0;
+}
+
+h3 {
+  @include font ($style: normal, $weight: 400, $size: 3.6rem, $height: 4.68rem);
+  margin: 0;
+}
+
+h4 {
+  @include font ($style: normal, $weight: 400, $size: 2.4rem, $height: 2.88rem);
+  margin: 0;
+}
