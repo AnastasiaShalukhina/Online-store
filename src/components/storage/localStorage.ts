@@ -179,8 +179,10 @@ function checkPromoInCart(promoId: string): boolean {
 function keepUrlOfMainPage(url: string) {
     if (localStorage.getItem('urlMain') !== null) {
         localStorage['urlMain'] = url;
+        console.log(url);
     } else {
         localStorage.setItem('urlMain', url);
+        console.log(url);
     }
 }
 

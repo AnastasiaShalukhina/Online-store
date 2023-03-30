@@ -34,6 +34,7 @@ function showNotFound() {
 }
 
 async function getMainByUrl(currentURL: string) {
+
     keepUrlOfMainPage(currentURL);
     const splitedURL: string[] = currentURL.split('?');
     const filtersPart: string[] = splitedURL.slice(1);
